@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class main5 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int sayı1 ,sayı2;
+
+        System.out.println("İki sayıyı sırayla giriniz");
+        sayı1 = s.nextInt();
+        sayı2 = s.nextInt();
+
+        System.out.print("1-Toplama\n2-Çıkarma\n3-Bölme\n4-Çarpma\nİşlemlerinden birini seçiniz :");
+
+        int secim = s.nextInt();
+
+        switch (secim){
+
+            case 1:
+                System.out.println("Toplam: " + sayı1 + sayı2);
+                break;
+
+            case 2:
+                System.out.println("İki sayının farkı :" + (sayı1 - sayı2));
+                break;
+
+            case 3:
+                System.out.println("İki sayının çarpımı :" + (sayı1 * sayı2));
+                break;
+
+            case 4:
+                System.out.println("İki sayınının bölümü :" + (sayı1 / sayı2));
+                break;
+
+            default:
+                System.out.println("Girdiğniz sayı 1,2,3,4 sayılarından biri olmalıdır");
+
+        }
+    }
+}
