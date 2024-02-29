@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class main7 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+
+        int mat,fizik,kimya,müzik;
+
+        System.out.println("Matematik Notunuzu Giriniz :");
+        mat = s.nextInt();
+
+        System.out.println("Fizik Notunu Giriniz : ");
+        fizik = s.nextInt();
+
+        System.out.println("Kimya Notunu Giriniz :");
+        kimya = s.nextInt();
+
+        System.out.println("Müzik Notunu Giriniz :");
+        müzik = s.nextInt();
+
+        double avarage = (mat + fizik + kimya + müzik) /5;
+
+        if (avarage <= 55){
+            System.out.println("Sınıfta kaldınız !");
+            System.out.println("Ortalamanız :" +avarage);
+        }else {
+            System.out.println("Sınıfı Geçtiniz !");
+            System.out.println("Ortalamanız :" + avarage);
+        }
+
+
+    }
+}
